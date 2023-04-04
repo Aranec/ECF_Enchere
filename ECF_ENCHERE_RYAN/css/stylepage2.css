@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgba(112, 112, 218, 0.461);
+    font-family: fantasy;
+    animation-name: fade;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+    /* Mon header */
+    /* Ma barre de navitation */
+    #afpa {
+        margin-top: 1em;
+        margin-left: 2em;
+        text-decoration: none;
+    }
+
+    /* Mon formulaire */
+    form {
+        width: 400px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #identifiant {
+        margin-top: 3em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    #identifiantTexte {
+        margin-left: -1.5em;
+        margin-right: 1.3em;
+    }
+
+    #mdpTexte {
+        margin-left: -1.5em;
+        margin-right: 1em;
+
+    }
+
+    #motdepasse {
+        margin-bottom: 2em;
+    }
+
+    #buttonconnexion {
+        height: 5em;
+        width: 30%;
+        margin-left: -15em;
+    }
+    
+    #souvenirEtmdpOublie {
+        margin-left: 8em;
+        margin-top: -3em;
+    }
+
+    #souvenir {
+        margin-bottom: 1em;
+    }
+    #buttoncreercompte {
+        margin-top: 4em;
+        height: 5em;
+        width: 80%;
+    }
+
+@media screen and (max-width: 375px) {
+
+    /* Mon header */
+    /* Ma barre de navitation */
+    #afpa {
+        margin-left: 4em;
+    }
+
+    #buttoncreercompte {
+        width: 75%;
+        margin-right: 2em;
+    }
+}
