@@ -1,0 +1,317 @@
+@charset "UTF-8";
+.{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgba(112, 112, 218, 0.461);
+    font-family: fantasy;
+    animation-name: fade;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+header{
+    margin-top: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#afpa{
+    margin-left: 25px;
+}
+
+#afpa:after{
+    content: "";
+    display: block;
+    transition: 0.25s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+    background: #ffffff;
+    width: 0%;
+    height: 4px;
+
+}
+
+#afpa:hover:after{
+width: 6%;
+margin-left: 1%;
+}
+
+#menu{
+display: inline;
+    width: 100vw;
+}
+
+ul{
+    float: right;
+}
+
+li{
+    display: inline;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+li:hover{
+    font-size:150%;
+    border:1px solid white;
+    transition:font-size 0.1s ease-out 0s,border 2s ease 0s;
+    }
+
+h1{
+    margin-left: 40%;
+}
+
+#option{
+width: 25vw;
+margin-left: 15px;
+}
+
+
+
+/*main*/
+
+h2{
+    margin-left: 5%;
+}
+
+#filtre{
+    margin-left: 5%;
+
+}
+
+#saisie{
+    width: 30%;
+    border-radius: 20px;
+    border-color: black;
+    border-style: groove;
+}
+
+
+#container{
+    float: right;
+    margin-right: 25vw;
+}
+
+
+/*radiobox*/
+
+#group,#groupb{
+
+width: 15vw;
+height: 20vh;
+display: inline-block;
+
+}
+
+#button{
+    width: 25vw;
+    height: 15vh;
+    box-shadow:
+    2.7px 2.5px 1.8px rgba(0, 0, 0, 0.051),
+    6.4px 6.1px 4.3px rgba(0, 0, 0, 0.076),
+    12px 11.5px 8.1px rgba(0, 0, 0, 0.094),
+    21.4px 20.5px 14.5px rgba(0, 0, 0, 0.113),
+    40.1px 38.4px 27.2px rgba(0, 0, 0, 0.136),
+    96px 92px 65px rgba(0, 0, 0, 0.19)
+;
+}
+
+#achat{
+    margin-bottom: 10%;
+}
+
+#a,#b,#c{
+margin-left: 15%;
+margin-bottom: 8%;
+}
+
+/*card*/
+
+.card {
+    display: flex;
+    width: 30%;
+    margin: 20px;
+    margin-left: 5%;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.prix,
+.finenchere,
+.vendeur {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.vendeur {
+    margin-top: auto;
+}
+
+
+
+/*responsive*/
+
+@media screen and (max-width: 375px){
+
+    header{
+        height: 12vh;
+    }
+
+
+#menu{
+    text-align: left;
+    width: 100vw;
+}
+
+
+
+li{
+    flex-direction: column;
+    display: block;
+    margin: 3px;
+}
+
+
+#afpa{
+    width: 33vw;
+}
+
+/*main*/ 
+
+h2{
+    font-size: 20px;
+}
+
+
+#group , #groupb{
+    font-size: small;
+}
+
+
+
+.card-container{
+    justify-content: center;
+}
+
+.card{
+    width: 100vw;
+    height: 20%;
+}
+
+.card-details{
+    font-size: small;
+}
+
+.card-title{
+    font-size: 15px;
+    
+}
+
+form{
+    height: 60vh;
+}
+
+#containerbarre{
+    float: right;
+    margin-top: 100%;
+}
+
+#group,#groupb{
+    flex-direction: column;
+    width: 50vw;
+    margin-right: 10px;
+}
+
+#containerbarre{
+margin-right: 25%;
+margin-bottom: 8%;
+}
+
+#saisie{
+    width: 200px;
+}
+
+#containerradio{
+    position: absolute;
+    
+}
+
+#button{
+    width: 200px;
+    height: 50px;
+}
+
+#containerform{
+    display: flex;
+    flex-direction: column;    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    display: none;
+}
+
+#enchere{
+    display: none;
+}
+
+
+
+
+
+}
