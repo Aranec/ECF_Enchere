@@ -10,7 +10,6 @@ body{
     animation-delay: 0s;
     animation-duration: 5s;
 }
-
 @keyframes fade{
     from{
         opacity: 0;
@@ -38,15 +37,16 @@ a{
     content: "";
     display: block;
     transition: 0.25s cubic-bezier(0.72, -0.01, 0.19, 0.92);
-    background: #fcfcfc;
+    background: #ffffff;
     width: 0%;
     height: 4px;
+
 }
 
 #afpa:hover:after{
-    width: 6%;
-    margin-left: 1%;
-    }
+width: 6%;
+margin-left: 1%;
+}
 
 #menu{
 display: inline;
@@ -64,7 +64,7 @@ li{
 }
 
 li:hover{
-    font-size:20px;
+    font-size:150%;
     border:1px solid white;
     transition:font-size 0.1s ease-out 0s,border 2s ease 0s;
     }
@@ -148,8 +148,6 @@ margin-bottom: 8%;
     border: 1px solid #000000;
     border-radius: 5px;
 }
-
-
 
 .card-container {
     display: flex;
@@ -288,3 +286,32 @@ margin-bottom: 8%;
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    display: none;
+}
+
+#enchere{
+    display: none;
+}
+
+
+
+
+
+}
