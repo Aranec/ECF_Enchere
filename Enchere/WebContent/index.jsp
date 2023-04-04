@@ -22,6 +22,7 @@
                 <p id="afpa">AFPA-Enchères</p>
             </a>
             <nav>
+            <%@ include file="./WEB-INF/include/connction-status.jsp" %>
                 <ul>
                     <li id="inscription"><a href="./ajoutUtilisateur"><b><u>S'inscrire</u></b></a></li>
                     <p>-</p>

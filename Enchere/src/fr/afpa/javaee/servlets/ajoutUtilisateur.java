@@ -46,7 +46,7 @@ public class ajoutUtilisateur extends HttpServlet {
 		
 		try {
 			this.utilisateurManager.addUtilisateur(utilisateur);
-			response.sendRedirect("./visualiserUtilisateur");
+			response.sendRedirect("/WEB-INF/connection.jsp");
 		} catch(BusinessException e) {
 			request.setAttribute("messageErreur", e.getMessage());
 			this.doGet(request, response);

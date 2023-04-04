@@ -20,6 +20,7 @@
         <a href="./index.jsp">
         <p id="afpa">AFPA-Enchères</p>
         </a>
+
     </header>
     <main>
         <form action="./Connexion" method="POST">
@@ -33,10 +34,8 @@
                 <label for="souvenir">Se souvenir de moi</label><br>
                 <a href="#">Mot de passe oublié</a><br>
             </div>
+            <button type="button" onclick="location.href='page3.html'" id="buttoncreercompte">Créer un compte</button>
         </form>
-        <a href="./ajoutUtilisateur">
-            <button type="button" id="buttoncreercompte">Créer un compte</button>
-            </a>
     </main>
     <footer>
 
